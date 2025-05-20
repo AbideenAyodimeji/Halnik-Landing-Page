@@ -393,7 +393,7 @@
   }
 
   .mainTexts {
-    font-size: 1.3rem;
+    font-size: 1rem;
     padding-right: 5vw;
   }
 
@@ -416,21 +416,21 @@
 
   .sectionThreeDesc {
     margin: 3.5vh 0 7vh;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 
   .offeringsHeading {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .offeringsTexts {
     padding-right: 2vw;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .sectionSevenQue,
   .sectionSevenAns {
-    font-size: 1.3rem;
+    font-size: 1rem;
     padding-right: 4vw;
   }
 
@@ -440,7 +440,7 @@
   }
 
   .sectionFourText {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .footerLogo {
@@ -456,24 +456,24 @@
   .youtubeIcon,
   .whatsappIcon,
   .ticktokIcon {
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .mainTexts {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 2rem;
   }
 
   .sectionOneHeading {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .sectionOneText {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     line-height: 2rem;
   }
 
@@ -482,19 +482,19 @@
   }
 
   .offeringsHeading {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .offeringsTexts {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .bridalCouture {
-    font-size: 2.2rem;
+    font-size: 1.5rem;
   }
 
   .sectionFourText {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
   }
 
   .sectionSeven {
@@ -503,12 +503,12 @@
   }
 
   .sectionSevenHeading {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .sectionSevenQue,
   .sectionSevenAns {
-    font-size: 1.7rem;
+    font-size: 1.1rem;
   }
 
   .faceBookIcon,
@@ -516,8 +516,8 @@
   .youtubeIcon,
   .whatsappIcon,
   .ticktokIcon {
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
   }
 
   .footer {
@@ -566,7 +566,7 @@
   }
 
   .mainTexts {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 2rem;
   }
 
@@ -596,7 +596,7 @@
   .sectionOneText {
     width: 50%;
     padding: 0 0vw;
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin: 3vh 0 2vh;
   }
   /* section one styles end */
@@ -627,16 +627,16 @@
   }
 
   .bespokeClothing {
-    font-size: 2rem;
+    font-size: 1.3rem;
   }
 
   .sectionThreeDesc {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 
   .offerings {
     margin: 3.5vh 0 0;
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   .offeringsContainer {
@@ -644,12 +644,12 @@
   }
 
   .offeringsHeading {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-top: 2rem;
   }
 
   .offeringsTexts {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     margin-top: 0.3rem;
   }
 
@@ -678,11 +678,11 @@
 
   .sectionFourText {
     margin-top: 0;
-    font-size: 1.3rem;
+    font-size: 1rem;
     width: 37vw;
     padding: 3vh 4vw 0;
     text-align: center;
-    line-height: 2rem;
+    line-height: 1.5rem;
   }
 
   .desktopSectionSix {
@@ -702,7 +702,7 @@
   .sectionSevenQue,
   .sectionSevenAns {
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .footer {
