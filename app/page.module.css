@@ -182,7 +182,7 @@
 
 .sectionOneHeading {
   color: #fff;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: bolder;
   text-align: center;
 }
@@ -199,21 +199,21 @@
 .sectionTwo {
   background-color: #5e6978;
   margin: 3vh 0 0;
-  padding: 8vh 0 5vw;
+  padding: 5vh 0 3vh;
 }
 
 .sectionTwoHeading {
   color: #fff;
   text-align: center;
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .sectionTwoText {
   margin-top: 1vh;
   color: #fff;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 /* section Two styles end */
 
@@ -228,18 +228,18 @@
 }
 
 .bespokeClothing {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 900;
 }
 
 .sectionThreeDesc {
   margin: 3.5vh 0 0;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .offerings {
   margin: 3.5vh 0 0;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 900;
   font-style: italic;
 }
@@ -249,13 +249,13 @@
 }
 
 .offeringsHeading {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bolder;
   font-style: italic;
 }
 
 .offeringsTexts {
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin-top: 1vh;
 }
 /* section Three styles end */
@@ -271,7 +271,7 @@
 }
 
 .sectionFourText {
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   text-align: center;
   margin-top: 2vh;
 }
@@ -296,7 +296,7 @@
   padding: 0 3vw;
   margin-bottom: 6vh;
   font-size: 1.3rem;
-  line-height: 2.5rem;
+  line-height: 2.3rem;
 }
 
 .faqBox {
@@ -308,13 +308,13 @@
 .sectionSevenQue,
 .sectionSevenAns {
   color: #fff;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 /* footer styles start */
 .footer {
   background-color: #5e6989;
-  padding: 4vh 4vw 5vh;
+  padding: 4vh 4vw 1vh;
 }
 
 .footerLogo {
@@ -347,7 +347,7 @@
 }
 
 .contactBoxTexts {
-  font-size: 01rem;
+  font-size: 0.9rem;
 }
 
 .footerIconsBox {
