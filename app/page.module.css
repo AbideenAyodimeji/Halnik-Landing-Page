@@ -1,168 +1,751 @@
-.page {
-  --gray-rgb: 0, 0, 0;
-  --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
-  --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
-
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
-
-  display: grid;
-  grid-template-rows: 20px 1fr 20px;
-  align-items: center;
-  justify-items: center;
-  min-height: 100svh;
-  padding: 80px;
-  gap: 64px;
-  font-family: var(--font-geist-sans);
+/* **************Utilities*********** */
+.whiteColor {
+  color: #fff;
+}
+.whiteBcg {
+  background-color: #fff;
+}
+.blackColor {
+  color: #000;
+}
+.blackBcg {
+  background-color: #000;
 }
 
-@media (prefers-color-scheme: dark) {
-  .page {
-    --gray-rgb: 255, 255, 255;
-    --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
-    --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
-
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-  }
-}
-
-.main {
+.flex,
+.flexRow,
+.flexColumn,
+.spaceAround,
+.alignCenter,
+.justifyCenter,
+.spaceBetween,
+.alignFlexEnd,
+.alignFlexStart {
   display: flex;
+}
+.flexColumn {
   flex-direction: column;
-  gap: 32px;
-  grid-row-start: 2;
 }
-
-.main ol {
-  font-family: var(--font-geist-mono);
-  padding-left: 0;
-  margin: 0;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: -0.01em;
-  list-style-position: inside;
+.spaceBetween {
+  justify-content: space-between;
 }
-
-.main li:not(:last-of-type) {
-  margin-bottom: 8px;
+.spaceAround {
+  justify-content: space-around;
 }
-
-.main code {
-  font-family: inherit;
-  background: var(--gray-alpha-100);
-  padding: 2px 4px;
-  border-radius: 4px;
-  font-weight: 600;
-}
-
-.ctas {
-  display: flex;
-  gap: 16px;
-}
-
-.ctas a {
-  appearance: none;
-  border-radius: 128px;
-  height: 48px;
-  padding: 0 20px;
-  border: none;
-  border: 1px solid transparent;
-  transition:
-    background 0.2s,
-    color 0.2s,
-    border-color 0.2s;
-  cursor: pointer;
-  display: flex;
+.alignCenter {
   align-items: center;
+}
+.alignFlexEnd {
+  align-items: flex-end;
+}
+.alignFlexStart {
+  align-items: flex-start;
+}
+.justifyCenter {
   justify-content: center;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 500;
 }
 
-a.primary {
-  background: var(--foreground);
-  color: var(--background);
-  gap: 8px;
+.smallGap {
+  gap: 0.3rem;
+}
+.smallerGap {
+  gap: 0.2rem;
 }
 
-a.secondary {
-  border-color: var(--gray-alpha-200);
-  min-width: 158px;
+.halfRemGap {
+  gap: 0.5rem;
+}
+.oneRemGap {
+  gap: 1rem;
+}
+.twoRemGap {
+  gap: 2rem;
 }
 
+.oneVhGap {
+  gap: 1vh;
+}
+.oneHalfVhGap {
+  gap: 1.5vh;
+}
+.twoVhGap {
+  gap: 2vh;
+}
+.threeVhGap {
+  gap: 3vh;
+}
+
+.textAlign {
+  text-align: center;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+/* ******************Utilities*************** */
+
+/* header styles start */
+.header {
+  padding: 3vh 4vw;
+  background-color: #28374b;
+}
+
+.nav {
+  position: relative;
+}
+
+.toggleIconsBox {
+  cursor: pointer;
+}
+
+.mobileMenu {
+  background-color: #28374b;
+  position: absolute;
+  top: 8vh;
+  left: 0;
+  padding-left: 4vw;
+  padding-top: 3vh;
+  width: 100vw;
+  height: 100vh !important;
+  margin-left: -4vw !important;
+  transition: all 3s ease-in-out;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.showMenu {
+  opacity: 1;
+}
+
+.hideMenu {
+  opacity: 0;
+  max-height: 0;
+}
+
+.mobileMenuListsWrapper {
+  gap: 1.5rem;
+}
+
+.mobileMenuListItems {
+  color: #fff;
+  font-size: 1.5rem;
+  list-style: none;
+}
+
+.navBarIcon,
+.navXicon {
+  height: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.desktopHeaderMenu {
+  display: none;
+}
+/* header styles end */
+
+/* main styles starts */
+.main {
+  background-image: url('/Images/image-8.jpeg');
+  padding: 5vh 4vw 0;
+}
+
+.mainHeadingText {
+  margin-bottom: 3vh;
+  font-weight: 700;
+}
+
+.mainTexts {
+  font-size: 1.2rem;
+  line-height: 25px;
+}
+
+.mainImg {
+  width: 70vw;
+  height: 20vh;
+  margin: 5vh 0;
+}
+/* main styles end */
+
+/* section one styles start */
+.sectionOne {
+  background-color: #28374b;
+  margin: 3vh 0 0;
+  padding: 0 4vw 5vh;
+  gap: 5vh;
+}
+
+.sectionOneImg {
+  height: 50vh;
+  width: 90vw;
+}
+
+.sectionOneHeading {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.sectionOneText {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  margin: 3vh 0 2vh;
+}
+/* section one styles end */
+
+/* section Two styles start */
+.sectionTwo {
+  background-color: #5e6978;
+  margin: 3vh 0 0;
+  padding: 8vh 0 5vw;
+}
+
+.sectionTwoHeading {
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+
+.sectionTwoText {
+  margin-top: 1vh;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+}
+/* section Two styles end */
+
+/* section Three styles start */
+.sectionThree {
+  margin: 3vh 7vw 5vh;
+}
+
+.sectionThreeImg {
+  width: 90vw;
+  height: 30vh;
+}
+
+.bespokeClothing {
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
+.sectionThreeDesc {
+  margin: 3.5vh 0 0;
+  font-size: 1.4rem;
+}
+
+.offerings {
+  margin: 3.5vh 0 0;
+  font-size: 1.4rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.offeringsContainer {
+  margin-top: 3.5vh;
+}
+
+.offeringsHeading {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.offeringsTexts {
+  font-size: 1.4rem;
+  margin-top: 1vh;
+}
+/* section Three styles end */
+
+/* section Four styles start */
+.sectionFour {
+  margin: 3vh 4vw 4vh;
+}
+
+.sectionFourImg {
+  width: 92vw;
+  height: 30vh;
+}
+
+.sectionFourText {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: 2vh;
+}
+/* section Four styles end */
+
+.bridalCouture {
+  font-size: 1.6rem;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 2vh;
+}
+
+/* section Seven styles start*/
+.sectionSeven {
+  background-color: #223c55;
+  padding: 4vh 4vw;
+}
+
+.sectionSevenHeading {
+  text-align: center;
+  color: #fff;
+  padding: 0 3vw;
+  margin-bottom: 6vh;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+
+.faqBox {
+  background-color: #5e6978;
+  border-radius: 0.5rem;
+  padding: 1rem 1rem 1rem 0.5rem;
+}
+
+.sectionSevenQue,
+.sectionSevenAns {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+/* footer styles start */
 .footer {
-  grid-row-start: 3;
-  display: flex;
-  gap: 24px;
+  background-color: #5e6989;
+  padding: 4vh 4vw 5vh;
 }
 
-.footer a {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+.footerLogo {
+  width: 60vw;
+  height: 20vh;
 }
 
-.footer img {
-  flex-shrink: 0;
+.contactBox {
+  margin: 1.2rem 0 0 0;
+  color: #fff;
 }
 
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  a.primary:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
-  }
-
-  a.secondary:hover {
-    background: var(--button-secondary-hover);
-    border-color: transparent;
-  }
-
-  .footer a:hover {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-  }
+.emailIcon {
+  height: 1.5rem;
+  color: #fff;
 }
 
-@media (max-width: 600px) {
-  .page {
-    padding: 32px;
-    padding-bottom: 80px;
-  }
+.phoneIcon {
+  height: 1.5rem;
+  color: #fff;
+}
 
+.locationIcon {
+  height: 3rem;
+  color: #fff;
+}
+
+.contactBoxTexts {
+  font-size: 1.4rem;
+}
+
+.footerIconsBox {
+  margin: 4vh 0;
+  gap: 2rem;
+}
+
+.faceBookIcon,
+.instagramIcon,
+.youtubeIcon,
+.whatsappIcon,
+.ticktokIcon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.faceBookIcon {
+  color: rgb(20, 24, 134);
+}
+
+.instagramIcon {
+  color: #c14543;
+}
+
+.whatsappIcon {
+  color: #1fc198;
+}
+
+.ticktokIcon {
+  color: #000;
+}
+
+.youtubeIcon {
+  color: red;
+}
+/* footer styles end */
+
+/* ******************************MEDIA QUERIES */
+@media only screen and (min-width: 600px) {
   .main {
-    align-items: center;
+    padding: 8vh 4vw 0;
+    background-color: red;
   }
 
-  .main ol {
-    text-align: center;
+  .mainTexts {
+    font-size: 1.3rem;
+    padding-right: 5vw;
   }
 
-  .ctas {
-    flex-direction: column;
+  .mainImg {
+    height: 40vh;
+    margin: 10vh 0;
   }
 
-  .ctas a {
-    font-size: 14px;
-    height: 40px;
-    padding: 0 16px;
+  .sectionOneImg {
+    height: 80vh;
   }
 
-  a.secondary {
-    min-width: auto;
+  .sectionOneText {
+    padding: 0 2vw;
+  }
+
+  .sectionThreeImg {
+    height: 60vh;
+  }
+
+  .sectionThreeDesc {
+    margin: 3.5vh 0 7vh;
+    font-size: 1.3rem;
+  }
+
+  .offeringsHeading {
+    font-size: 1.2rem;
+  }
+
+  .offeringsTexts {
+    padding-right: 2vw;
+    font-size: 1.2rem;
+  }
+
+  .sectionSevenQue,
+  .sectionSevenAns {
+    font-size: 1.3rem;
+    padding-right: 4vw;
+  }
+
+  .sectionFourImg {
+    height: 55vh;
+    margin-top: 2rem;
+  }
+
+  .sectionFourText {
+    font-size: 1.2rem;
+  }
+
+  .footerLogo {
+    height: 30vh;
+  }
+
+  .contactBoxTexts {
+    padding-right: 5vw;
+  }
+
+  .faceBookIcon,
+  .instagramIcon,
+  .youtubeIcon,
+  .whatsappIcon,
+  .ticktokIcon {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .mainTexts {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .sectionOneHeading {
+    font-size: 2rem;
+  }
+
+  .sectionOneText {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .sectionThreeDesc {
+    font-size: 1.5rem;
+  }
+
+  .offeringsHeading {
+    font-size: 1.5rem;
+  }
+
+  .offeringsTexts {
+    font-size: 1.5rem;
+  }
+
+  .bridalCouture {
+    font-size: 2.2rem;
+  }
+
+  .sectionFourText {
+    font-size: 1.8rem;
+  }
+
+  .sectionSeven {
+    padding: 8vh 4vw;
+    margin-top: 10vh;
+  }
+
+  .sectionSevenHeading {
+    font-size: 2rem;
+  }
+
+  .sectionSevenQue,
+  .sectionSevenAns {
+    font-size: 1.7rem;
+  }
+
+  .faceBookIcon,
+  .instagramIcon,
+  .youtubeIcon,
+  .whatsappIcon,
+  .ticktokIcon {
+    width: 3rem;
+    height: 3rem;
   }
 
   .footer {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    padding: 8vh 4vw 5vh;
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .header {
+    padding: 6vh 4vw;
+    background-color: #28374b;
+  }
+
+  .mobileMenu {
+    display: none;
+  }
+
+  .toggleIconsBox {
+    display: none;
+  }
+
+  .desktopHeaderMenu {
+    display: flex;
+    gap: 4rem;
+  }
+
+  .desktopHeaderMenuTexts {
+    color: #fff;
+    font-size: 1.2rem;
+  }
+
+  .logoImage {
+    height: 32vh;
+    width: 22vw;
+  }
+
+  .main {
+    display: flex;
+    padding: 12vh 4vw 15vh;
+    align-items: center;
+  }
+
+  .mainHeadingText {
+    font-size: 4rem;
+  }
+
+  .mainTexts {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+
+  .mainImg {
+    width: 35vw;
+  }
+
+  /* section one styles start */
+  .sectionOne {
+    flex-direction: row;
+    margin: 9vh 7vh;
+    padding: 0;
+    width: 90%;
+  }
+
+  .sectionOneImg {
+    width: 45%;
+    height: 100vh;
+    padding-left: 1vw;
+  }
+
+  .sectionOneHeading {
+    width: 45%;
+    font-size: 2.5rem;
+  }
+
+  .sectionOneText {
+    width: 50%;
+    padding: 0 0vw;
+    font-size: 1.3rem;
+    margin: 3vh 0 2vh;
+  }
+  /* section one styles end */
+
+  .sectionThreeImg {
+    display: none;
+  }
+  .desktopSectionFour,
+  .desktopSectionFive,
+  .desktopSectionSix {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .desktopSectionFive {
+    flex-direction: row-reverse;
+  }
+
+  .sectionThree {
+    background-color: #5e6978;
+    margin: 0;
+  }
+
+  .sectionThreeContents {
+    background-color: #fff;
+    margin: 0vh 11vw;
+    padding: 5vh;
+  }
+
+  .bespokeClothing {
+    font-size: 2rem;
+  }
+
+  .sectionThreeDesc {
+    font-size: 1.3rem;
+  }
+
+  .offerings {
+    margin: 3.5vh 0 0;
+    font-size: 1.3rem;
+  }
+
+  .offeringsContainer {
+    margin-top: 5vh;
+  }
+
+  .offeringsHeading {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+  }
+
+  .offeringsTexts {
+    font-size: 1.3rem;
+    margin-top: 0.3rem;
+  }
+
+  .sectionFour {
+    margin: 0;
+    background-color: #5e6978;
+    padding: 0rem 11vw;
+  }
+
+  .sectionFourContents {
+    margin: 3rem 0 0 0;
+    width: 100%;
+    padding: 2vw;
+    gap: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+  }
+
+  .sectionFourImg {
+    width: 32vw;
+    height: 50vh;
+    margin-top: 0;
+  }
+
+  .sectionFourText {
+    margin-top: 0;
+    font-size: 1.3rem;
+    width: 37vw;
+    padding: 3vh 4vw 0;
+    text-align: center;
+    line-height: 2rem;
+  }
+
+  .desktopSectionSix {
+    padding-bottom: 3rem;
+  }
+
+  .desktopFaqs {
+    flex-direction: row;
+    gap: 2rem;
+    padding: 3vw 2vw 2vw;
+  }
+
+  .sectionSevenHeading {
+    font-size: 2rem;
+  }
+
+  .sectionSevenQue,
+  .sectionSevenAns {
+    color: #fff;
+    font-size: 1.2rem;
+  }
+
+  .footer {
+    display: flex;
+    padding: 2rem 7rem 2rem 5rem;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 7rem; */
+  }
+
+  .footerIconsBox {
+    flex-direction: column;
+    /* margin-right: 2rem; */
+  }
+
+  .footerLogo {
+    width: 20vw;
+    height: 30vh;
+  }
+
+  .faceBookIcon,
+  .instagramIcon,
+  .youtubeIcon,
+  .whatsappIcon,
+  .ticktokIcon {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .contactBox {
+    margin-top: 0;
+    gap: 1rem;
+  }
+
+  .contactBoxTexts {
+    font-size: 1.2rem;
+    /* margin-right: 5rem; */
+  }
+  .emailIcon {
+    height: 1.2rem;
+  }
+
+  .phoneIcon {
+    height: 1.2rem;
+  }
+
+  .locationIcon {
+    height: 1.5rem;
   }
 }
