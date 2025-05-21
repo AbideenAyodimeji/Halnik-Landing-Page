@@ -7,6 +7,7 @@ import {
   faEnvelope,
   faLocationDot,
   faPhone,
+  faStar,
   faX,
 } from '@fortawesome/free-solid-svg-icons'
 
@@ -329,6 +330,59 @@ export default function Home() {
         </section>
         {/* section 6 end */}
 
+        <section
+          className={`${styles.testimonialSection} ${styles.flexColumn}`}
+        >
+          <h2 className={styles.testimonialSectionHeading}>TESTIMONIAL</h2>
+
+          <div className={`${styles.testimonialsWrapper} ${styles.flexColumn}`}>
+            <div className={`${styles.testimonialBoxOne} ${styles.flexColumn}`}>
+              <p className={styles.testimonialHeading}>Adebayo Tolu</p>
+              <div className={`${styles.testimonialIcons} ${styles.flexRow}`}>
+                <FontAwesomeIcon icon={faStar} className={styles.starIcon} />
+                <FontAwesomeIcon icon={faStar} className={styles.starIcon} />
+                <FontAwesomeIcon icon={faStar} className={styles.starIcon} />
+                <FontAwesomeIcon icon={faStar} className={styles.starIcon} />
+                <FontAwesomeIcon icon={faStar} className={styles.starIcon} />
+              </div>
+              <p className={styles.testimonialText}>
+                I ordered uniforms for my staffs and was blown away. Excellent
+                fit and quality! HALNIK FASHION EMPIRE is truly a game changer.
+              </p>
+            </div>
+            <div className={`${styles.testimonialBoxTwo} ${styles.flexColumn}`}>
+              <p className={styles.testimonialHeading}>Funmi Olagoke</p>
+              <div className={`${styles.testimonialIcons} ${styles.flexRow}`}>
+                <FontAwesomeIcon icon={faStar} className={styles.starIcon} />
+                <FontAwesomeIcon icon={faStar} className={styles.starIcon} />
+                <FontAwesomeIcon icon={faStar} className={styles.starIcon} />
+                <FontAwesomeIcon icon={faStar} className={styles.starIcon} />
+                <FontAwesomeIcon icon={faStar} className={styles.starIcon} />
+              </div>
+              <p className={styles.testimonialText}>
+                My daughter’s birthday dress was everything we dreamed of and
+                more. Beautiful work and great service.
+              </p>
+            </div>
+            <div
+              className={`${styles.testimonialBoxThree} ${styles.flexColumn}`}
+            >
+              <p className={styles.testimonialHeading}>A'ishah</p>
+              <div className={`${styles.testimonialIcons} ${styles.flexRow}`}>
+                <FontAwesomeIcon icon={faStar} className={styles.starIcon} />
+                <FontAwesomeIcon icon={faStar} className={styles.starIcon} />
+                <FontAwesomeIcon icon={faStar} className={styles.starIcon} />
+                <FontAwesomeIcon icon={faStar} className={styles.starIcon} />
+                <FontAwesomeIcon icon={faStar} className={styles.starIcon} />
+              </div>
+              <p className={styles.testimonialText}>
+                The DIY class I attended changed my life. I now make simple
+                clothes for myself. Highly recommend them!
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* section 7 start */}
         <section className={styles.sectionSeven}>
           <h1 className={styles.sectionSevenHeading}>
@@ -370,7 +424,7 @@ export default function Home() {
                   Q3: Can I book a consultation before sewing?
                 </p>
                 <p className={styles.sectionSevenAns}>
-                  A: Absolutely! Contact us via phone or email to schedule a
+                  A: Absolutely! Contact us via phone or.star to schedule a
                   consultation.
                 </p>
               </div>
@@ -466,6 +520,16 @@ export default function Home() {
               <FontAwesomeIcon
                 icon={faFacebook}
                 className={styles.faceBookIcon}
+              />
+            </a>
+            <a
+              href='https://www.instagram.com/oyegbenrohalimat/?igsh=ZWYwNG9mdG8wcXR#'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <FontAwesomeIcon
+                icon={faInstagram}
+                className={styles.instagramIcon}
               />
             </a>
             <a
